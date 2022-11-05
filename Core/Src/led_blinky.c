@@ -17,18 +17,18 @@ void led_blinky(void) {
 	switch(state){
 		case LEDINIT:
 			state = LEDON;
-			setTimer(500, 2);
+			setTimer(1000, 2);
 			break;
 
 		case LEDON:
 			HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, 0);
 			state = LEDOFF;
-			setTimer(500, 2);
+			setTimer(1000, 2);
 			break;
 
 		case LEDOFF:
 			state = LEDON;
-			setTimer(500, 2);
+			setTimer(1000, 2);
 			HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, 1);
 			break;
 	}
