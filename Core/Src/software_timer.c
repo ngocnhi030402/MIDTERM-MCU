@@ -50,3 +50,11 @@ void timerRun(){
 	}
 
 }
+
+int CountDownTimer(int second){
+	if(timer1_flag == 1){
+		timer1_flag = 0;
+		return 1;
+	}
+	else return 0;
+}

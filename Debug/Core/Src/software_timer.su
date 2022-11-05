@@ -2,3 +2,4 @@
 ../Core/Src/software_timer.c:22:6:setTimer2	16	static
 ../Core/Src/software_timer.c:26:6:setTimer3	16	static
 ../Core/Src/software_timer.c:30:6:timerRun	4	static
+../Core/Src/software_timer.c:54:5:CountDownTimer	16	static

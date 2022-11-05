@@ -24,7 +24,8 @@ Core/Src/fsm_simple_buttons.o: ../Core/Src/fsm_simple_buttons.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Core/Inc/button.h ../Core/Inc/display_led.h
+ ../Core/Inc/button.h ../Core/Inc/display_led.h \
+ ../Core/Inc/software_timer.h
 ../Core/Inc/fsm_simple_buttons.h:
 ../Core/Inc/global.h:
 ../Core/Inc/main.h:
@@ -54,3 +55,4 @@ Core/Src/fsm_simple_buttons.o: ../Core/Src/fsm_simple_buttons.c \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 ../Core/Inc/button.h:
 ../Core/Inc/display_led.h:
+../Core/Inc/software_timer.h:
