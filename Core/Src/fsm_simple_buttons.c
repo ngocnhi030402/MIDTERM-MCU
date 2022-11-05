@@ -19,19 +19,24 @@ void fsm_simple_buttons_run(){
 		case STATUS_INIT:
 			counter_value = 0;
 			display7SEG(counter_value);
+			setTimer1(1000);
+
 			if(isButtonPressed(RESETbtn)){
 				status = STATUS_RESET;
 				counter_value = 0;
+				setTimer1(1000);
 			}
 
 			if(isButtonPressed(INCREASEbtn)){
 				status = STATUS_INCREASE;
 				counter_value++;
+				setTimer1(1000);
 			}
 
 			if(isButtonPressed(DECREASEbtn)){
 				status = STATUS_DECREASE;
 				counter_value--;
+				setTimer1(1000);
 			}
 			break;
 
@@ -42,16 +47,20 @@ void fsm_simple_buttons_run(){
 			if(isButtonPressed(RESETbtn)){
 				status = STATUS_RESET;
 				counter_value = 0;
+				setTimer1(1000);
+
 			}
 
 			if(isButtonPressed(INCREASEbtn)){
 				status = STATUS_INCREASE;
 				counter_value++;
+				setTimer1(1000);
 			}
 
 			if(isButtonPressed(DECREASEbtn)){
 				status = STATUS_DECREASE;
 				counter_value--;
+				setTimer1(1000);
 			}
 
 			break;
@@ -63,16 +72,19 @@ void fsm_simple_buttons_run(){
 			if(isButtonPressed(RESETbtn)){
 				status = STATUS_RESET;
 				counter_value = 0;
+				setTimer1(1000);
 			}
 
 			if(isButtonPressed(INCREASEbtn)){
 				status = STATUS_INCREASE;
 				counter_value++;
+				setTimer1(1000);
 			}
 
 			if(isButtonPressed(DECREASEbtn)){
 				status = STATUS_DECREASE;
 				counter_value--;
+				setTimer1(1000);
 			}
 			break;
 
@@ -83,16 +95,19 @@ void fsm_simple_buttons_run(){
 			if(isButtonPressed(RESETbtn)){
 				status = STATUS_RESET;
 				counter_value = 0;
+				setTimer1(1000);
 			}
 
 			if(isButtonPressed(INCREASEbtn)){
 				status = STATUS_INCREASE;
 				counter_value++;
+				setTimer1(1000);
 			}
 
 			if(isButtonPressed(DECREASEbtn)){
 				status = STATUS_DECREASE;
 				counter_value--;
+				setTimer1(1000);
 			}
 
 			break;

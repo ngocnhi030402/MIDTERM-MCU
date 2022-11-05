@@ -12,7 +12,6 @@
 
 //#define TICK 10 //10ms
 #define TIMER_COUNT 1 //1s = 1000ms
-#define LED 1 //red-led number
 
 extern int counter_value;
 

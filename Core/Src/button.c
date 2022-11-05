@@ -40,8 +40,10 @@ void getKeyInput() {
       else {
         TimeOutForKeyPress[i]--;
         if(TimeOutForKeyPress[i] == 0) {
-          KeyReg3[i] = NORMAL_STATE;
-
+          if(KeyReg3[i] == PRESSED_STATE){
+                TimeOutForKeyPress[i] = 100;
+                button_flag[i] = 1;
+          }
         }
       }
     }
