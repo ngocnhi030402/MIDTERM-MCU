@@ -7,8 +7,8 @@
 
 #include "button.h"
 //
-#define PRESSED_STATE 0
-#define NORMAL_STATE 1
+#define PRESSED_STATE 	0
+#define NORMAL_STATE 	1
 
 
 uint16_t BUTTON[3] = {GPIO_PIN_10, GPIO_PIN_11, GPIO_PIN_12};

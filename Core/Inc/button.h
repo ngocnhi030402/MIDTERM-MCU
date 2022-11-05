@@ -10,9 +10,9 @@
 
 #include "global.h"
 
-#define RESETbtn 0
-#define INCREASEbtn 1
-#define DECREASEbtn 2
+#define RESETbtn 		0
+#define INCREASEbtn 	1
+#define DECREASEbtn 	2
 
 void getKeyInput();
 int isButtonPressed(int button);

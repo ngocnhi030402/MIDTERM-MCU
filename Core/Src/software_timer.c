@@ -8,53 +8,29 @@
 
 #define TICK 10
 
-int timer1_counter = 0;
-int timer1_flag = 0;
-int timer2_counter = 0;
-int timer2_flag = 0;
-int timer3_counter = 0;
-int timer3_flag = 0;
+int timer_counter[3];
+int timer_flag[3];
 
-void setTimer1(int duration){
-	timer1_counter = duration/TICK;
-	timer1_flag = 0;
-}
-void setTimer2(int duration){
-	timer2_counter = duration/TICK;
-	timer2_flag = 0;
-}
-void setTimer3(int duration){
-	timer3_counter = duration/TICK;
-	timer3_flag = 0;
+void setTimer(int duration, int num){
+	timer_counter[num] = duration/TICK;
+	timer_flag[num] = 0;
 }
 void timerRun(){
-	if(timer1_counter > 0){
-		timer1_counter--;
-		if(timer1_counter <= 0) {
-			timer1_flag = 1;
+	for(int i = 0; i < 3; i++){
+		if(timer_counter[i] > 0){
+			timer_counter[i]--;
+			if(timer_counter[i] <= 0) {
+				timer_flag[i] = 1;
+				timer_counter[i] = 0;
+			}
 		}
 	}
-
-	if(timer2_counter > 0){
-		timer2_counter--;
-		if(timer2_counter <= 0) {
-			timer2_flag = 1;
-		}
-	}
-
-	if(timer3_counter > 0){
-		timer3_counter--;
-		if(timer3_counter <= 0) {
-			timer3_flag = 1;
-		}
-	}
-
 }
 
-int CountDownTimer(int second){
-	if(timer1_flag == 1){
-		timer1_flag = 0;
+int CountDownTimer(int num){
+	if(timer_flag[num] == 1){
+		timer_flag[num] = 0;
 		return 1;
 	}
-	else return 0;
+	return 0;
 }

@@ -27,6 +27,7 @@
 #include "button.h"
 #include "display_led.h"
 #include "fsm_simple_buttons.h"
+#include "led_blinky.h"
 //#include
 /* USER CODE END Includes */
 
@@ -103,6 +104,7 @@ int main(void)
   while (1)
   {
 	  fsm_simple_buttons_run();
+	  led_blinky();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

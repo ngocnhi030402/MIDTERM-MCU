@@ -10,14 +10,8 @@
 
 #include "global.h"
 
-void setTimer1(int duration);
-void setTimer2(int duration);
-void setTimer3(int duration);
+void setTimer(int duration, int num);
 void timerRun();
-int CountDownTimer(int second);
-
-extern int timer1_flag;
-extern int timer2_flag;
-extern int timer3_flag;
+int CountDownTimer(int num);
 
 #endif /* INC_SOFTWARE_TIMER_H_ */
